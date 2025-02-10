@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .kiskep{
+        width: 150px;
+    }
+</style>
+<body>
+
+<div>
+    <div id="kepforciklus"></div>
+<br>
+<img src="" alt="" id="nagykep">
+</div>
+
+<div>
+<img onclick="nagyit('0')" src="0.jpg" alt="" class="kiskep">
+<img onclick="nagyit('1')" src="1.jpg" alt="" class="kiskep">
+<img onclick="nagyit('2')" src="2.jpg" alt="" class="kiskep">
+<img onclick="nagyit('3')" src="3.jpg" alt="" class="kiskep">
+<img onclick="nagyit('4')" src="4.jpg" alt="" class="kiskep">
+<br>
+<img src="" alt="" id="nagykep">
+</div>
+
+
+
+<script>
+    function nagyit(kepszam){
+        document.getElementById("nagykep").src= kepszam+".jpg"
+
+    }
+
+
+
+
+    for (let i = 0; i < 5; i++) {
+        szoveg+=`<img onclick="nagyit($(0))" src="0.jpg" alt="" class="kiskep">`
+        
+    }
+</script>
+
+
+    
+</body>
+</html>
